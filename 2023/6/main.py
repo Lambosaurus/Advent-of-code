@@ -42,6 +42,6 @@ def join_races(races):
     return int(t), int(d)
 
 if __name__ == "__main__":
-    races = load_input('input.txt')
+    races = load_input()
     print(f"part1: {multiply(ways_to_win(race) for race in races)}")
     print(f"part2: {ways_to_win(join_races(races))}")

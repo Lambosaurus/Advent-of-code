@@ -27,6 +27,6 @@ def power( bag ):
     return bag[0] * bag[1] * bag[2]
 
 if __name__ == "__main__":
-    games = list(load_input('input.txt'))
+    games = list(load_input())
     print(f"part1: {sum( game_id for game_id, sets in games if is_game_possible((12, 13, 14), sets) )}")
     print(f"part2: {sum( power(minimum_cube_set(sets)) for game_id, sets in games )}")

@@ -71,6 +71,6 @@ def gear_ratios(map):
             yield ns[0] * ns[1]
 
 if __name__ == "__main__":
-    map = load_input('input.txt')
+    map = load_input()
     print(f"part1: {sum(valid_numbers(map))}")
     print(f"part2: {sum(gear_ratios(map))}")

@@ -92,7 +92,7 @@ def explode(seeds):
         yield seeds[i*2], seeds[i*2 + 1]
 
 if __name__ == "__main__":
-    seeds, transforms = list(load_input('input.txt'))
+    seeds, transforms = list(load_input())
     sort_transforms(transforms)
     print(f"part1: {min( resolve_all(seed, transforms) for seed in seeds )}")
     print(f"part2: {min( resolve_range(start, count, transforms) for start, count in explode(seeds) )}")

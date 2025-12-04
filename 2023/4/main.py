@@ -28,6 +28,6 @@ def score_instances(cards):
 
 
 if __name__ == "__main__":
-    cards = list(load_input('input.txt'))
+    cards = list(load_input())
     print(f"part1: {sum(score(card) for card in cards)}")
     print(f"part2: {score_instances(cards)}")
