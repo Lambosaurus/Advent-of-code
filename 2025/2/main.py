@@ -38,5 +38,5 @@ def find_ids(ranges, predicate):
 
 if __name__ == "__main__":
     ranges = load_input()
-    print(f"part1: {sum(id for id in find_ids(ranges, two_part_id))}")
-    print(f"part2: {sum(id for id in find_ids(ranges, any_part_id))}")
+    print(f"part1: {sum(find_ids(ranges, two_part_id))}")
+    print(f"part2: {sum(find_ids(ranges, any_part_id))}")
